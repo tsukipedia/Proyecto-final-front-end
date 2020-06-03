@@ -1,0 +1,68 @@
+:root {
+  --cafeClaro: #D8CABB;
+  --verdeClaro: #A4BC00;
+  --sombra: #828282;
+  --fontTitulos: 'Oxygen', sans-serif;
+  --fontContenido: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--cafeClaro);
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  margin-top: 88px;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.plantasCard {
+  width: 896px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  position: relative;
+  top: 0;
+  background-color: var(--verdeClaro);
+  box-shadow: 6px 6px 6px var(--sombra);
+}
+
+.contenedorPlanta {
+  width: 100%;
+  height: 392px;
+  position: absolute;
+  margin: 0;
+  top: 0;
+}
+
+.contenedorPlanta > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cardContent {
+  padding: 15px 40px;
+  font-size: 16px;
+  font-family: var(--fontContenido);
+  position: absolute;
+  top: 432px;
+}
+
+ div > h1 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: var(--fontTitulos);
+  padding: 0px 40px;
+  position: absolute;
+  top: 380px;
+}
