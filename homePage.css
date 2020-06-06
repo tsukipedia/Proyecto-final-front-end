@@ -1,9 +1,19 @@
 :root {
   --cafeClaro: #D8CABB;
   --verdeClaro: #A4BC00;
+  --verdeOscuro: #546F01;
   --sombra: #828282;
+  --cafeTrans: rgba(168, 143, 107, 0.7);
   --fontTitulos: 'Oxygen', sans-serif;
   --fontContenido: 'Montserrat', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -65,4 +75,51 @@ body {
   padding: 0px 40px;
   position: absolute;
   top: 380px;
+}
+
+.barra {
+  width: auto;
+  height: 88px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 12px;
+  z-index: 10000;
+
+  background: var(--cafeTrans);
+}
+
+#header {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.barra .item {
+  margin: auto;
+  padding: 12px;
+
+  font-family: var(--fontTitulos);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+
+  color: var(--verdeOscuro);
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer-text {
+  font-size: 24px;
 }
