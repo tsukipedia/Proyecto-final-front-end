@@ -2,7 +2,9 @@
   --cafeClaro: #D8CABB;
   --verdeClaro: #A4BC00;
   --verdeOscuro: #546F01;
+  --negro: #181F0D;
   --sombra: #828282;
+  --beigeTrans: rgba(216, 202, 187, 0.7);
   --cafeTrans: rgba(168, 143, 107, 0.7);
   --fontTitulos: 'Oxygen', sans-serif;
   --fontContenido: 'Montserrat', sans-serif;
@@ -122,4 +124,53 @@ body {
 
 #footer-text {
   font-size: 24px;
+}
+
+.card-bienvenida {
+  display: flex;
+  justify-content: center;
+}
+
+.bienvenida {
+  width: 800px;
+  height: 520px;
+  border-radius: 24px;
+  margin: 48px;
+  overflow: hidden;
+
+  background-color: var(--beigeTrans);
+
+  font-family: var(--fontTitulos);
+  color: var(--negro);
+}
+
+.titulo1 {
+  font-size: 40px;
+}
+
+.titulo2 {
+font-size: 64px;
+}
+
+.bienvenida-content {
+  position: relative;
+}
+
+.bienvenida-content .texto {
+  text-align: center;
+  width: 400px;
+  position: absolute;
+  left: 24px;
+  top: 60px;
+}
+
+.bienvenida-content .imagen {
+  position: relative;
+  width: 800px;
+  height: 336px;
+}
+
+.imagen img {
+  position: absolute;
+  right:  0;
 }
