@@ -24,8 +24,8 @@ body {
 }
 
 .plantasCard {
-  width: 896px;
-  height: 500px;
+  width: 46.666666666666664vw;
+  height: 54.34782608695652vh;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
