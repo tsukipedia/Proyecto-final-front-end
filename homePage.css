@@ -154,20 +154,20 @@ body {
 }
 
 .cardContent {
-  padding: 15px 40px;
+  padding: 1.5479876160990713vh 2.0833333333333335vw;
   font-size: 16px;
   font-family: var(--fontContenido);
   position: absolute;
-  top: 432px;
+  top: 44.582043343653254vh;
 }
 
  div > h1 {
   font-size: 32px;
   font-weight: bold;
   font-family: var(--fontTitulos);
-  padding: 0px 40px;
+  padding: 0vh 2.0833333333333335vw;
   position: absolute;
-  top: 380px;
+  top: 39.21568627450981vh;
 }
 
 .footer {
