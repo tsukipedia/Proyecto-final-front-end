@@ -185,6 +185,36 @@ body {
   text-align: center;
 }
 
+.about-us {
+  background-image: linear-gradient(rgba(164, 188, 0, 0.5), rgba(164, 188, 0, 0.5)), url(https://sitkascience.org/sssc/wp-content/uploads/2020/02/seed-to-sprout-image-1800x1200.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+
+  width: 850px;
+  height: 424px;
+  margin-top: 88px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  border-radius: 24px;
+}
+
+.about-us .titulo {
+  font-family: var(--fontTitulos);
+  font-weight: bold;
+  font-size: 40px;
+  padding: 28px;
+}
+
+.about-us .texto {
+  font-family: var(--fontContenido);
+  font-size: 24px;
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 8px;
+}
+
 @media only screen and (max-width: 1358px) {
   .bannerBody {
     font-size: 1.5rem;
