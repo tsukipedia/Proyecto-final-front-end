@@ -1,0 +1,346 @@
+:root {
+  --cafeClaro: #D8CABB;
+  --cafeClaroOpaco: rgba(216, 202, 187, 0.7);
+  --cafe: #A88F6B;
+  --cafeOpaco: rgba(168, 143, 107, 0.7);
+  --verdeClaro: #A4BC00;
+  --verde: #546F01;
+  --sombra: #828282;
+  --grisClaro: #E8E6E6;
+  --fontTitulos: 'Oxygen', sans-serif;
+  --fontContenido: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--cafeClaro);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  display:flex;
+  background-color: var(--cafe);
+  width: 100%;
+  height: 5rem;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.navBar *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navLeft, .navRight {
+  display: flex;
+  list-style-type: none;
+}
+
+.navItem {
+  color: var(--verde);
+  font-family: var(--fontTitulos);
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+.navItem a{
+  color: var(--verde);
+  font-family: var(--fontTitulos);
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--cafe);
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.footerText {
+  font-family: var(--fontContenido);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contactoContainer {
+  width: 100%;
+  height: -moz-calc(100vh - 10.5rem);
+  height: -webkit-calc(100vh - 10.5rem);
+  height: -o-calc(100vh - 10.5rem);
+  height: calc(100vh - 10.5rem);
+  position: relative;
+  display: inline-block;
+}
+
+.contactoTitle {
+  color: var(--verde);
+  font-family: var(--fontTitulos);
+  font-weight: bold;
+  font-size: 3rem;
+  margin-left: 3vw;
+  margin-bottom: 0.2vh;
+}
+
+.contactoHead {
+  font-family: var(--fontContenido);
+  font-size: 1.5rem;
+  margin-left: 3vw;
+}
+
+.inputLabel {
+  font-family: var(--fontContenido);
+  font-size: 1.5rem;
+  margin-left: 3vw;
+}
+
+.inputLabelMens{
+  vertical-align: top;
+}
+
+.labelTel {
+  margin-left: 1vw;
+}
+
+.inputNombre {
+  width: 80vw;
+  height: 5vh;
+  background-color: var(--grisClaro);
+  margin-bottom: 2vh;
+  margin-left: 1vw;
+  border: none;
+  border-style: none;
+}
+
+.inputEmail, .inputTel {
+  width: 35vw;
+  height: 5vh;
+  background-color: var(--grisClaro);
+  margin-bottom: 2vh;
+  border: none;
+  border-style: none;
+}
+
+.inputEmail {
+  margin-left: 2.5vw;
+}
+
+.inputTel {
+  margin-left: 1vw;
+}
+
+.inputMens {
+  background-color: var(--grisClaro);
+  margin-left: 1vw;
+  border: none;
+  border-style: none;
+  width: 80vw;
+}
+
+.inputSend {
+  background-color: var(--verdeClaro);
+  color: #fff;
+  font-family: var(--fontContenido);
+  font-size: 1.5rem;
+  border: none;
+  border-style: none;
+  border-radius: 5px;
+  width: 15vw;
+  padding: 0.6rem;
+  margin-top: 1vh;
+  margin-left: 77vw;
+}
+
+@media only screen and (max-width: 1358px) {
+  .bannerBody {
+    font-size: 1.5rem;
+  }
+
+  .footerText {
+    font-size: 1.2rem;
+  }
+
+  .contactoTitle {
+    font-size: 2.2rem;
+  }
+  
+  .contactoHead {
+    font-size: 1.2rem;
+  }
+  
+  .inputLabel {
+    font-size: 1.2rem;
+  }
+
+  .inputSend {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .navItem a {
+    font-size: 2rem;
+  }
+
+  .contactoTitle {
+    font-size: 2rem;
+  }
+  
+  .contactoHead {
+    font-size: 1rem;
+  }
+  
+  .inputLabel {
+    font-size: 1rem;
+  }
+
+  .inputSend {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .footerText {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .navItem a {
+    font-size: 1.7rem;
+  }
+
+  .tituloHead {
+    font-size: 1.3rem;
+  }
+
+  .tituloBody {
+    font-size: 2rem;
+  }
+
+  .imgBanner {
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 591px) {
+  .navItem a {
+    font-size: 1.4rem;
+  }
+
+  .contactoTitle {
+    font-size: 1.8rem;
+  }
+  
+  .contactoHead {
+    font-size: 0.8rem;
+  }
+  
+  .inputLabel {
+    font-size: 0.8rem;
+  }
+
+  .inputSend {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 521px) {
+  .navItem a {
+    font-size: 1.1rem;
+  }
+
+  .contactoTitle {
+    font-size: 1.8rem;
+  }
+  
+  .contactoHead {
+    font-size: 0.8rem;
+  }
+  
+  .inputLabel {
+    font-size: 0.6rem;
+  }
+
+  .inputSend {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navItem a {
+    font-size: 1rem;
+  }
+
+  .imgBanner {
+    height: 40%;
+  }
+
+  .footerText {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .navItem a {
+    font-size: 0.8rem;
+  }
+
+  .inputEmail, .inputTel {
+    width: 33vw;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .navItem a {
+    font-size: 1rem;
+  }
+
+  .tituloHead {
+    font-size: 1rem;
+    margin-top: 2.375rem;
+    margin-left: 1.688rem;
+  }
+
+  .tituloBody {
+    margin-left: 1.688rem;
+  }
+
+  .bannerBody{
+    width: 63%;
+  }
+
+  .navItem {
+    margin: 1rem;
+  }
+
+  .footerText {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 363px) {
+  .navItem a {
+    font-size: 0.8rem;
+  }
+
+  .inputEmail, .inputTel {
+    width: 32vw;
+  }
+
+  .inputSend {
+    font-size: 0.6rem;
+    padding: 0.5rem;
+  }
+
+  .bannerBody{
+    font-size: 0.9rem;
+  }
+}
