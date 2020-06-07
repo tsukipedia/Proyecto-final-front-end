@@ -1,6 +1,10 @@
 :root {
   --cafeClaro: #D8CABB;
+  --cafeClaroOpaco: rgba(216, 202, 187, 0.7);
+  --cafe: #A88F6B;
+  --cafeOpaco: #B6A083;
   --verdeClaro: #A4BC00;
+  --verde: #546F01;
   --sombra: #828282;
   --fontTitulos: 'Oxygen', sans-serif;
   --fontContenido: 'Montserrat', sans-serif;
@@ -8,6 +12,104 @@
 
 body {
   background-color: var(--cafeClaro);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  display:flex;
+  background-color: var(--cafeOpaco);
+  width: 100%;
+  height: 6rem;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+}
+
+.navBar *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navLeft, .navRight {
+  display: flex;
+  list-style-type: none;
+}
+
+.navItem {
+  color: var(--verde);
+  font-family: var(--fontTitulos);
+  font-size: 2.5rem;
+  margin: 1.5rem;
+}
+
+.navItem a{
+  color: var(--verde);
+  font-family: var(--fontTitulos);
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.heroBanner *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heroBanner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.fondoBanner {
+  width: 100%;
+  height: 100vh;
+  object-fit: unset;
+}
+
+.bannerContent {
+  width: 71.875vw;
+  height: 71.5vh;
+  background-color: var(--cafeClaroOpaco);
+  position: absolute;
+  bottom: 2.813rem;
+  border-radius: 1.5rem;
+}
+
+.tituloHead {
+  font-family: var(--fontTitulos);
+  font-size: 2rem;
+  margin-left: 2.688rem;
+  margin-top: 2.375rem;
+}
+
+.tituloBody {
+  font-family: var(--fontTitulos);
+  font-size: 3rem;
+  margin-left: 2.688rem;
+}
+
+.bannerBody {
+  font-family: var(--fontTitulos);
+  font-size: 2rem;
+  margin-left: 2.688rem;
+  margin-top: 2.5rem;
+  width: 47%;
+  text-align: center;
+}
+
+.imgBanner {
+  height: 80%;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .cardContainer {
@@ -66,4 +168,163 @@ body {
   padding: 0px 40px;
   position: absolute;
   top: 380px;
+}
+
+.footer {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--cafe);
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.footerText {
+  font-family: var(--fontContenido);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1358px) {
+  .bannerBody {
+    font-size: 1.5rem;
+  }
+
+  .footerText {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .navItem a {
+    font-size: 2rem;
+  }
+
+  .bannerBody {
+    font-size: 1.3rem;
+  }
+
+  .imgBanner {
+    height: 70%;
+  }
+
+  .footerText {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .navItem a {
+    font-size: 1.7rem;
+  }
+
+  .tituloHead {
+    font-size: 1.3rem;
+  }
+
+  .tituloBody {
+    font-size: 2rem;
+  }
+
+  .imgBanner {
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 591px) {
+  .navItem a {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 521px) {
+  .navItem a {
+    font-size: 1.1rem;
+  }
+
+  .tituloHead {
+    font-size: 1rem;
+    margin-top: 4.375rem;
+  }
+
+  .tituloBody {
+    font-size: 1.5rem;
+  }
+
+  .bannerBody {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .imgBanner {
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navItem a {
+    font-size: 1rem;
+  }
+
+  .imgBanner {
+    height: 40%;
+  }
+
+  .footerText {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .navItem a {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .navItem a {
+    font-size: 1rem;
+  }
+
+  .tituloHead {
+    font-size: 1rem;
+    margin-top: 2.375rem;
+    margin-left: 1.688rem;
+  }
+
+  .tituloBody {
+    margin-left: 1.688rem;
+  }
+
+  .bannerBody{
+    width: 63%;
+  }
+
+  .navItem {
+    margin: 1rem;
+  }
+
+  .footerText {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 363px) {
+  .navItem a {
+    font-size: 0.8rem;
+  }
+
+  .tituloHead {
+    font-size: 0.9rem;
+    margin-left: 1.3rem;
+  }
+
+  .tituloBody {
+    font-size: 1.3rem;
+    margin-left: 1.3rem;
+  }
+
+  .bannerBody{
+    font-size: 0.9rem;
+  }
 }
