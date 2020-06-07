@@ -10,6 +10,14 @@
   --fontContenido: 'Montserrat', sans-serif;
 }
 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--cafeClaro);
   box-sizing: border-box;
@@ -128,8 +136,6 @@ body {
 .plantasCard {
   width: 46.666666666666664vw;
   height: 54.34782608695652vh;
-  display: flex;
-  flex-direction: column;
   border-radius: 8px;
   position: relative;
   top: 0;
@@ -140,8 +146,6 @@ body {
 .contenedorPlanta {
   width: 100%;
   height: 40.454076367389064vh;
-  position: absolute;
-  margin: 0;
   top: 0;
 }
 
@@ -154,20 +158,14 @@ body {
 }
 
 .cardContent {
-  padding: 1.5479876160990713vh 2.0833333333333335vw;
-  font-size: 16px;
+  margin: 16px 32px;
+  font-size: 1em;
   font-family: var(--fontContenido);
-  position: absolute;
-  top: 44.582043343653254vh;
 }
 
  div > h1 {
-  font-size: 32px;
-  font-weight: bold;
   font-family: var(--fontTitulos);
-  padding: 0vh 2.0833333333333335vw;
-  position: absolute;
-  top: 39.21568627450981vh;
+  margin-left: 32px;
 }
 
 .footer {
