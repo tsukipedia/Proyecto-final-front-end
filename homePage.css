@@ -79,98 +79,32 @@ body {
   top: 380px;
 }
 
-.barra {
-  width: auto;
-  height: 88px;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 12px;
-  z-index: 10000;
+.about-us {
+  background-image: linear-gradient(rgba(164, 188, 0, 0.5), rgba(164, 188, 0, 0.5)), url(https://sitkascience.org/sssc/wp-content/uploads/2020/02/seed-to-sprout-image-1800x1200.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
 
-  background: var(--cafeTrans);
-}
-
-#header {
-  position: sticky;
-  top: 0px;
-  left: 0px;
-}
-
-.left, .right {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.barra .item {
-  margin: auto;
-  padding: 12px;
-
-  font-family: var(--fontTitulos);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-
-  color: var(--verdeOscuro);
-}
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-#footer-text {
-  font-size: 24px;
-}
-
-.card-bienvenida {
-  display: flex;
-  justify-content: center;
-}
-
-.bienvenida {
-  width: 800px;
-  height: 520px;
+  width: 850px;
+  height: 424px;
+  margin-top: 88px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
   border-radius: 24px;
-  margin: 48px;
-  overflow: hidden;
+}
 
-  background-color: var(--beigeTrans);
-
+.about-us .titulo {
   font-family: var(--fontTitulos);
-  color: var(--negro);
-}
-
-.titulo1 {
+  font-weight: bold;
   font-size: 40px;
+  padding: 28px;
 }
 
-.titulo2 {
-font-size: 64px;
-}
-
-.bienvenida-content {
-  position: relative;
-}
-
-.bienvenida-content .texto {
+.about-us .texto {
+  font-family: var(--fontContenido);
+  font-size: 24px;
   text-align: center;
-  width: 400px;
-  position: absolute;
-  left: 24px;
-  top: 60px;
-}
-
-.bienvenida-content .imagen {
-  position: relative;
-  width: 800px;
-  height: 336px;
-}
-
-.imagen img {
-  position: absolute;
-  right:  0;
+  margin-left: 50%;
+  margin-right: 8px;
 }
