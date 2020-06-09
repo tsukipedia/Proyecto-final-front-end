@@ -20,7 +20,7 @@ body {
 
 .navBar {
   display:flex;
-  background-color: var(--cafe);
+  background-color: var(--cafeOpaco);
   width: 100%;
   height: 5rem;
   justify-content: space-between;
