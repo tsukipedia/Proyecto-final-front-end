@@ -26,6 +26,7 @@ body {
   justify-content: space-between;
   position: relative;
   z-index: 2;
+  align-items: center;
 }
 
 .navBar *{
@@ -60,6 +61,8 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
+  position: fixed;
+  bottom: 0;
 }
 
 .footerText {
@@ -156,7 +159,7 @@ body {
   margin-left: 77vw;
 }
 
-@media only screen and (max-width: 1358px) {
+@media only screen and (max-width: 1366px) {
   .bannerBody {
     font-size: 1.5rem;
   }
@@ -168,11 +171,11 @@ body {
   .contactoTitle {
     font-size: 2.2rem;
   }
-  
+
   .contactoHead {
     font-size: 1.2rem;
   }
-  
+
   .inputLabel {
     font-size: 1.2rem;
   }
@@ -180,6 +183,14 @@ body {
   .inputSend {
     font-size: 1.2rem;
     padding: 0.5rem;
+  }
+
+  .navBar {
+    height: 4rem;
+  }
+
+  .navItem a{
+    font-size: 2rem;
   }
 }
 
@@ -191,11 +202,11 @@ body {
   .contactoTitle {
     font-size: 2rem;
   }
-  
+
   .contactoHead {
     font-size: 1rem;
   }
-  
+
   .inputLabel {
     font-size: 1rem;
   }
@@ -236,11 +247,11 @@ body {
   .contactoTitle {
     font-size: 1.8rem;
   }
-  
+
   .contactoHead {
     font-size: 0.8rem;
   }
-  
+
   .inputLabel {
     font-size: 0.8rem;
   }
@@ -259,11 +270,11 @@ body {
   .contactoTitle {
     font-size: 1.8rem;
   }
-  
+
   .contactoHead {
     font-size: 0.8rem;
   }
-  
+
   .inputLabel {
     font-size: 0.6rem;
   }
