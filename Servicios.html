@@ -1,82 +1,179 @@
-<html>
+:root {
+  --cafeClaro: #D8CABB;
+  --cafeClaroOpaco: rgba(216, 202, 187, 0.7);
+  --cafe: #A88F6B;
+  --cafeOpaco: #B6A083;
+  --verdeClaro: #A4BC00;
+  --verde: #546F01;
+  --sombra: #828282;
+  --fontTitulos: 'Oxygen', sans-serif;
+  --fontContenido: 'Montserrat', sans-serif;
+}
 
-  <head>
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Servicios.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+body {
+  background-color: var(--cafeClaro);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  </head>
+.navBar {
+  display:flex;
+  flex-direction: row;
+  background-color: var(--cafeOpaco);
+  width: 100%;
+  height: 6rem;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  align-items: center;
+}
 
-  <body>
+.navBar *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    <header class="navBar">
-      <ul class="navLeft">
-        <li class="navItem"><a href="HomePage.html">Home</a></li>
-        <li class="navItem"><a href="Servicios.html">Servicios</a></li>
-        <li class="navItem"><a href="index.html#about-us">About Us</a></li>
-      </ul>
-      <ul class="navRight">
-        <li class="navItem"><a href="Contacto.html">Contacto</a></li>
-      </ul>
-    </header>
+.navLeft, .navRight {
+  display: flex;
+  list-style-type: none;
+}
 
-    <section class="Contenido">
+.navItem {
+  color: var(--verde);
+  font-family: var(--fontTitulos);
+  font-size: 2.5rem;
+  margin: 1.5rem;
+}
 
-      <h1>Servicios</h1>
+.navItem a{
+  color: var(--verde);
+  font-family: var(--fontTitulos);
+  font-size: 2.5rem;
+  text-decoration: none;
+}
 
-      <div class="cardServicios">
-        <figure>
-          <img src="https://fimgs.net/himg/o.60887.jpg">
-        </figure>
+.Contenido * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-        <div class="Servicio">
-          <h2>Compra en linea</h2>
-        </div>
+.Contenido {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
 
-        <div class="texto">
-          Se le proporcionará al usuario una opción para comprar la planta,
-          la cual lo redirigirá a una página donde podrá comprar la planta.
-        </div>
-      </div>
+.Contenido > h1 {
+  color: var(--verde);
+  position: absolute;
+  top: 96px;
+  left: 24px;
+  font-family: var(--fontTitulos);
+  font-size: 4rem;
+}
 
-      <div class="cardServicios">
-        <figure>
-          <img src="https://www.estiloydeco.com/wp-content/uploads/2015/07/ideas-jardines-10.jpg">
-        </figure>
+.cardServicios {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 28.36809176225235vh;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  align-items: center;
+  width: 39.761431411530815vw;
+  height: 48.3837330552659vh;
+  min-width: 17.5rem;
+  min-height: 28.75rem;
+  margin: 0rem 3.5rem;
+  z-index: 1;
+}
 
-        <div class="Servicio">
-          <h2>Ideas de jardin</h2>
-        </div>
+figure {
+  width: 100%;
+  height: 200px;
+  top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-        <div class="texto">
-          Se pondrá una sección donde se darán ideas de como plantar las plantas,
-          en esta sección se adjuntarán imágenes de como quedará el jardín e instrucciones para plantar de dicha manera.
-        </div>
-      </div>
+figure > img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
 
-      <div class="cardServicios">
-        <figure>
-          <img src="https://i1.wp.com/www.educapeques.com/wp-content/uploads/2016/05/la-planta.jpg?resize=543%2C842&ssl=1">
-        </figure>
+.Servicio {
+  display: flex;
+  width: 100%;
+  margin: 24px 0px;
+  justify-content: center;
+}
 
-        <div class="Servicio">
-          <h2>Informacion de la planta</h2>
-        </div>
+.Servicio h2 {
+  font-family: var(--fontTitulos);
+  font-size: 2rem;
+  text-align: center;
+}
 
-        <div class="texto">
-          Habrá una sección en la cual se dará información detallada sobre la planta,
-          como la familia de la que proviene, clima, cuidados, curiosidades e historias alrededor de esta planta.
-        </div>
-      </div>
+.texto {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: var(--fontContenido);
+  font-size: 1rem;
+  text-align: center;
+  padding: .5rem;
+}
 
-    </section>
+.footer {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--cafe);
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  align-items: center;
+}
 
-    <footer class="footer">
-      <p class="footerText">Plantas para tu jardin es una empresa sin fines de lucro que solo quiere que la gente tenga buenas plantas</p>
-    </footer>
+.footerText {
+  font-family: var(--fontContenido);
+  font-size: 1.5rem;
+  text-align: center;
+}
 
-  </body>
+@media only screen and (max-width: 1366px) {
+  .navBar {
+    height: 4rem;
+  }
 
-</html>
+  .navItem a{
+    font-size: 2rem;
+  }
+
+  .Contenido > h1 {
+    font-size: 3rem;
+  }
+}
