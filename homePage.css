@@ -33,6 +33,7 @@ body {
   justify-content: space-between;
   position: fixed;
   z-index: 2;
+  align-items: center;
 }
 
 .navBar *{
@@ -47,9 +48,6 @@ body {
 }
 
 .navItem {
-  color: var(--verde);
-  font-family: var(--fontTitulos);
-  font-size: 2.5rem;
   margin: 1rem;
 }
 
@@ -135,7 +133,7 @@ body {
 
 .plantasCard {
   width: 46.666666666666664vw;
-  height: 54.34782608695652vh;
+  height: auto;
   border-radius: 8px;
   position: relative;
   top: 0;
@@ -174,6 +172,7 @@ body {
   background-color: var(--cafe);
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 1.5rem;
 }
 
@@ -213,13 +212,21 @@ body {
   margin-right: 8px;
 }
 
-@media only screen and (max-width: 1358px) {
+@media only screen and (max-width: 1366px) {
   .bannerBody {
     font-size: 1.5rem;
   }
 
   .footerText {
     font-size: 1.2rem;
+  }
+
+  .navBar {
+    height: 4rem;
+  }
+
+  .navItem a{
+    font-size: 2rem;
   }
 }
 
